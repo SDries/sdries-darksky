@@ -1,4 +1,4 @@
-# Technical assignment front-end engineer
+# Dark Sky React App
 Make an application that allows the user to view the observed (in the past 30 days) or forecasted (in the future) daily weather conditions for a given location using the [Dark Sky API](https://darksky.net/dev/docs).
 
 You are free to use the tools and frameworks you prefer, however we strongly suggest you keep the hard skills of the job offer in mind.
