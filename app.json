@@ -1,0 +1,16 @@
+{
+  "name": "sdries-darksky",
+  "description": "Dark Sky API powered weather app",
+  "scripts": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

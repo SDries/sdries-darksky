@@ -1,0 +1,126 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+details.DarkSkyAlert {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 1px solid $light-grey;
+  @include border-radius(4px);
+
+  $DarkSkyAlert-padding: 20px;
+  padding: $DarkSkyAlert-padding;
+
+  $details-marker-padding-vertical: 10px;
+  $details-marker-padding-horizontal: 11px;
+  $details-marker-padding-shift: 2px;
+  ::-webkit-details-marker {
+    background: $light-grey;
+    color: $white;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: $details-marker-padding-vertical ($details-marker-padding-horizontal - $details-marker-padding-shift) $details-marker-padding-vertical ($details-marker-padding-horizontal + $details-marker-padding-shift);
+    @include border-radius(4px);
+    margin-right: 20px;
+    border: 1px solid transparent;
+  }
+
+  &:hover {
+    ::-webkit-details-marker {
+      background: $dark-grey;
+    }
+  }
+
+  &:active {
+    ::-webkit-details-marker {
+      color: $dark-grey;
+      border-color: $dark-grey;
+      background: $white;
+    }
+  }
+
+  &[open] {
+    transition: all 0.6s;
+
+    ::-webkit-details-marker {
+      padding: $details-marker-padding-vertical $details-marker-padding-horizontal;
+    }
+
+    summary {
+      margin-bottom: $DarkSkyAlert-padding;
+    }
+  }
+
+  summary {
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.3rem;
+
+    .title {
+      color: $dark-grey;
+      font-weight: 700;
+    }
+    .severity {
+      $severity-size: 15px;
+      display: block;
+      margin-right: 20px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 $severity-size ($severity-size * 2) $severity-size;
+      border-color: transparent;
+
+      &.advisory {
+        border-bottom-color: $green;
+      }
+      &.watch {
+        border-bottom-color: $blue;
+      }
+      &.warning {
+        border-bottom-color: $dark-red;
+      }
+    }
+    .time {
+      color: $light-grey;
+      font-family: $title-font;
+      font-size: .9rem;
+
+      @include bp-medium {
+        font-size: 1.1rem;
+      }
+
+      time {
+        white-space: nowrap;
+      }
+      span {
+        color: lighten($light-grey, 20%);
+      }
+    }
+  }
+  p + p {
+    margin-top: 10px;
+  }
+  a {
+    margin-top: 20px;
+    color: $white;
+    background: $blue;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-size: .9rem;
+    line-height: .9rem;
+    padding: 7px 10px;
+    display: inline-block;
+    @include border-radius(4px);
+
+    &:hover {
+      background: $dark-blue;
+    }
+
+    &:active {
+      border-color: $dark-blue;
+      background: $white;
+      color: $dark-blue;
+    }
+  }
+}

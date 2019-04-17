@@ -1,0 +1,9 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.DarkSkyApiFetcher-loading {
+  @include loading(200px, $blue);
+  .lds-facebook {
+    margin: 0 auto;
+  }
+}

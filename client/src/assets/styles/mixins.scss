@@ -1,0 +1,59 @@
+@mixin bp-medium {
+	@media only screen and (max-width: 900px) {
+		@content;
+	}
+}
+@mixin bp-small {
+	@media only screen and (max-width: 500px) {
+		@content;
+	}
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin loading($size, $color) {
+	// animation from https://loading.io/css/
+	.lds-facebook {
+		display: block;
+		position: relative;
+		width: $size;
+		height: $size;
+
+		div {
+			display: inline-block;
+			position: absolute;
+			left: $size * 0.1;
+			width: $size * 0.2;
+			background: $color;
+			animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+
+			&:nth-child(1) {
+				left: $size * 0.1;
+				animation-delay: -0.24s;
+			}
+			&:nth-child(2) {
+				left: $size * 0.4;
+				animation-delay: -0.12s;
+			}
+			&:nth-child(3) {
+				left: $size * 0.7;
+				animation-delay: 0;
+			}
+		}
+	}
+	@keyframes lds-facebook {
+		0% {
+			top: $size * 0.1;
+			height: $size * 0.8;
+		}
+		50%, 100% {
+			top: $size * 0.3;
+			height: $size * 0.4;
+		}
+	}
+}

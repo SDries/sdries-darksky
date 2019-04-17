@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-darkskyalerts renders correctly 1`] = `
+<details
+  className="DarkSkyAlert"
+>
+  <summary>
+    <div
+      className="severity advisory"
+    />
+    <div
+      className="title-time-wrapper"
+    >
+      <div
+        className="title"
+      >
+        A brief description of the alert.
+      </div>
+      <div
+        className="time"
+      >
+        <time>
+          Thursday, Jan 1
+        </time>
+        <span>
+           - 
+        </span>
+        <time>
+          Thursday, Jan 1
+        </time>
+      </div>
+    </div>
+  </summary>
+  <p>
+    A detailed description of the alert.
+  </p>
+  <p>
+    Regions: 
+    region 1
+  </p>
+  <a
+    href="https://www.google.com/"
+    rel="noreferrer noopener"
+    target="_blank"
+  >
+    Read more
+  </a>
+</details>
+`;

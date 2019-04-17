@@ -1,0 +1,31 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.DarkSkyBlock {
+  margin-bottom: 40px;
+  header {
+    padding: 10px 25px 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include border-radius(4px);
+    border: 1px solid $light-grey;
+
+    .WeatherIcon {}
+    p {
+      font-size: 1rem;
+      line-height: 1.6rem;
+    }
+  }
+
+  div.points {
+    .DarkSkyPoint {
+      border-bottom: 1px solid $dark-blue;
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}

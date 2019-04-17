@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-weathericon renders icon when name is provided 1`] = `
+<WeatherIcon
+  icon="clear-day"
+>
+  <div
+    className="WeatherIcon"
+  >
+    <img
+      alt="clear-day"
+      src={
+        Object {
+          "ReactComponent": [Function],
+          "__esModule": true,
+          "default": "clear-day.svg",
+        }
+      }
+    />
+  </div>
+</WeatherIcon>
+`;
+
+exports[`react-weathericon renders nothing without icon name 1`] = `<WeatherIcon />`;

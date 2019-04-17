@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-darkskyalerts shallowly renders multiple children 1`] = `
+<div
+  className="DarkSkyAlerts"
+>
+  <DarkSkyAlert
+    alert={
+      Object {
+        "description": "A detailed description of the alert.",
+        "expires": 0,
+        "regions": Array [
+          "region 1",
+        ],
+        "severity": "advisory",
+        "time": 0,
+        "title": "A brief description of the alert.",
+        "url": "https://www.google.com/",
+      }
+    }
+  />
+  <DarkSkyAlert
+    alert={
+      Object {
+        "description": "A detailed description of the alert.",
+        "expires": 0,
+        "regions": Array [
+          "region 1",
+        ],
+        "severity": "advisory",
+        "time": 0,
+        "title": "A brief description of the alert.",
+        "url": "https://www.google.com/",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`react-darkskyalerts shallowly renders one child 1`] = `
+<div
+  className="DarkSkyAlerts"
+>
+  <DarkSkyAlert
+    alert={
+      Object {
+        "description": "A detailed description of the alert.",
+        "expires": 0,
+        "regions": Array [
+          "region 1",
+        ],
+        "severity": "advisory",
+        "time": 0,
+        "title": "A brief description of the alert.",
+        "url": "https://www.google.com/",
+      }
+    }
+  />
+</div>
+`;

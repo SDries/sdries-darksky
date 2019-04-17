@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-darkskypoint shallowly renders big correctly 1`] = `
+<div
+  className="DarkSkyPoint big"
+>
+  <div
+    className="current-temp"
+  >
+    9
+    <span>
+      ° C
+    </span>
+  </div>
+  <WeatherIcon
+    huge={true}
+    icon="partly-cloudy-day"
+  />
+  <div
+    className="description"
+  >
+    <time>
+      Thursday, Feb 21
+    </time>
+    <div
+      className="apparent-temp"
+    >
+      Feels like 
+      <span>
+        6
+        <span>
+          ° C
+        </span>
+      </span>
+    </div>
+    <p>
+      Partly Cloudy
+    </p>
+  </div>
+</div>
+`;
+
+exports[`react-darkskypoint shallowly renders correctly 1`] = `
+<div
+  className="DarkSkyPoint"
+>
+  <div
+    className="current-temp"
+  >
+    9
+    <span>
+      ° C
+    </span>
+  </div>
+  <WeatherIcon
+    huge={false}
+    icon="partly-cloudy-day"
+  />
+  <div
+    className="description"
+  >
+    <time>
+      Thursday, Feb 21
+    </time>
+    <p>
+      Partly Cloudy
+    </p>
+  </div>
+</div>
+`;

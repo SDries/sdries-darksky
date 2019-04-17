@@ -1,0 +1,20 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.LocationSelector {
+	font-size: .8rem;
+	line-height: 1rem;
+	padding: 20px 0;
+	color: $dark-grey;
+
+  @include bp-medium {
+  	font-size: 1rem;
+	}
+
+	& > p {
+		margin-bottom: 5px;
+		span {
+			font-family: $title-font;
+		}
+	}
+}

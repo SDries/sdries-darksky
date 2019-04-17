@@ -1,0 +1,88 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.DarkSkyPoint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  @include bp-medium {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .min-max-temp {
+    flex: 0 0 50px;
+    text-align: right;
+    white-space: nowrap;
+
+    @include bp-medium {
+      flex-basis: 30px;
+    }
+
+    .high, .low {
+      display: block;
+      font-size: .9rem;
+      line-height: 1.2rem;
+      font-family: $title-font;
+
+      span {
+        font-size: .7rem;
+        vertical-align: text-top;
+      }
+
+      @include bp-medium {
+        font-size: 1rem;
+
+        span {
+          font-size: .8rem;
+        }
+      }
+    }
+    .high {
+      color: $dark-grey;
+    }
+    .low {
+      color: $light-grey;
+    }
+  }
+  .WeatherIcon {
+    flex: 0 0 100px;
+  }
+  .description {
+    line-height: 1.5rem;
+    time {
+      font-family: $title-font;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      color: $light-grey;
+    }
+  }
+
+  &.big {
+    .current-temp {
+      font-family: $title-font;
+      text-align: right;
+      font-size: 3rem;
+      line-height: 3.2rem;
+      flex: 0 0 150px;
+      white-space: nowrap;
+
+      @include bp-medium {
+        flex-basis: 100px;
+      }
+      @include bp-small {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        flex-basis: 60px;
+      }
+    }
+    .description {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      .apparent-temp {
+        font-family: $title-font;
+      }
+    }
+  }
+}

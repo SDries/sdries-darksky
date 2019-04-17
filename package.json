@@ -1,0 +1,42 @@
+{
+	"name": "sdries-darksky",
+	"version": "1.0.0",
+	"engines": {
+		"npm": ">=6.4.1",
+		"node": ">=v10.13.0"
+	},
+	"scripts": {
+		"client": "cd client && npm run start",
+		"server": "nodemon server.js",
+		"test": "cd client && npm run test",
+		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+		"eslint": "eslint server.js helpers/*.js",
+		"heroku-deploy": "git push heroku master",
+		"heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+	},
+	"cacheDirectories": [
+		"node_modules",
+		"client/node_modules"
+	],
+	"dependencies": {
+		"async": "^2.6.2",
+		"dark-sky": "^1.1.5",
+		"express": "^4.16.4",
+		"express-validator": "^5.3.1",
+		"memory-cache": "^0.2.0"
+	},
+	"devDependencies": {
+		"concurrently": "^4.0.1",
+		"eslint": "^5.12.0",
+		"eslint-config-airbnb": "^17.1.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.1",
+		"eslint-plugin-react": "^7.11.0"
+	},
+	"nodemonConfig": {
+		"ignore": [
+			"client/*",
+			"README.md"
+		]
+	}
+}

@@ -1,0 +1,20 @@
+@import 'assets/styles/reset.scss';
+@import 'assets/styles/shared.scss';
+@import 'assets/styles/mixins.scss';
+
+html {
+  font-size: 21px;
+
+  @include bp-medium {
+  	font-size: 16px;
+  }
+  @include bp-small {
+  	font-size: 14px;
+  }
+}
+
+body {
+  background: $white;
+  color: $black;
+  font-family: $text-font;
+}

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-darkskyflags shallowly renders unavailable correctly 1`] = `
+<div
+  className="DarkSkyFlags"
+>
+  <p>
+    The Dark Sky data source supports the given location, however a temporary error has made the data unavailable.
+  </p>
+</div>
+`;

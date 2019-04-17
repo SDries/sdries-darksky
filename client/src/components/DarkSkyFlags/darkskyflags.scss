@@ -1,0 +1,12 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.DarkSkyFlags {
+	margin-bottom: 40px;
+	font-size: 1rem;
+	line-height: 2rem;
+	color: $red;
+  border: 1px solid $red;
+  @include border-radius(4px);
+  padding: 20px;
+}

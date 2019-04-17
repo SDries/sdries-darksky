@@ -1,0 +1,34 @@
+@import '../../assets/styles/mixins.scss';
+
+.WeatherIcon {
+	img {
+		width: 100px;
+		height: 100px;
+		display: block;
+	}
+
+	&.big img {
+		width: 150px;
+		height: 150px;
+
+		@include bp-small {
+			width: 100px;
+			height: 100px;
+		}
+	}
+
+	&.huge img {
+		width: 200px;
+		height: 200px;
+
+		@include bp-medium {
+			width: 150px;
+			height: 150px;
+		}
+
+		@include bp-small {
+			width: 100px;
+			height: 100px;
+		}
+	}
+}

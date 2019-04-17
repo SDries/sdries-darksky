@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-error renders with button 1`] = `
+<div
+  className="Error"
+>
+  <p>
+    message
+  </p>
+  <button
+    disabled={false}
+    onClick={[Function]}
+  >
+    Click here to retry
+  </button>
+</div>
+`;
+
+exports[`react-error renders with message 1`] = `
+<div
+  className="Error"
+>
+  <p>
+    message
+  </p>
+</div>
+`;

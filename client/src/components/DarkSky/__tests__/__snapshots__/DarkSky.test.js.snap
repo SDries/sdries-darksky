@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-darksky shallowly renders children correctly 1`] = `
+<div>
+  <DarkSkyAlerts
+    data={Array []}
+  />
+  <DarkSkyPoint
+    big={true}
+    point={
+      Object {
+        "apparentTemperature": 6.76,
+        "cloudCover": 0.4,
+        "dewPoint": 6.79,
+        "humidity": 0.83,
+        "icon": "partly-cloudy-day",
+        "ozone": 306.86,
+        "precipIntensity": 0,
+        "precipProbability": 0,
+        "pressure": 1027.76,
+        "summary": "Partly Cloudy",
+        "temperature": 9.57,
+        "time": 1550764770,
+        "uvIndex": 0,
+        "visibility": 8.08,
+        "windBearing": 282,
+        "windGust": 27.71,
+        "windSpeed": 20.95,
+      }
+    }
+  />
+  <DarkSkyBlock
+    block={
+      Object {
+        "data": Array [
+          Object {
+            "apparentTemperatureHigh": 11.43,
+            "apparentTemperatureHighTime": 1550754000,
+            "apparentTemperatureLow": 4.58,
+            "apparentTemperatureLowTime": 1550808000,
+            "apparentTemperatureMax": 11.43,
+            "apparentTemperatureMaxTime": 1550754000,
+            "apparentTemperatureMin": 0.12,
+            "apparentTemperatureMinTime": 1550725200,
+            "cloudCover": 0.45,
+            "dewPoint": 4.65,
+            "humidity": 0.86,
+            "icon": "partly-cloudy-day",
+            "moonPhase": 0.57,
+            "ozone": 314.75,
+            "precipIntensity": 0,
+            "precipIntensityMax": 0.0025,
+            "precipIntensityMaxTime": 1550757600,
+            "precipProbability": 0,
+            "pressure": 1026.81,
+            "summary": "Partly cloudy throughout the day.",
+            "sunriseTime": 1550731823,
+            "sunsetTime": 1550769241,
+            "temperatureHigh": 11.43,
+            "temperatureHighTime": 1550754000,
+            "temperatureLow": 5.1,
+            "temperatureLowTime": 1550815200,
+            "temperatureMax": 11.43,
+            "temperatureMaxTime": 1550754000,
+            "temperatureMin": 2.68,
+            "temperatureMinTime": 1550725200,
+            "time": 1550703600,
+            "uvIndex": 2,
+            "uvIndexTime": 1550750400,
+            "visibility": 8.77,
+            "windBearing": 244,
+            "windGust": 32.17,
+            "windGustTime": 1550739600,
+            "windSpeed": 11.64,
+          },
+          Object {
+            "apparentTemperatureHigh": 13.84,
+            "apparentTemperatureHighTime": 1550847600,
+            "apparentTemperatureLow": 2.07,
+            "apparentTemperatureLowTime": 1550901600,
+            "apparentTemperatureMax": 13.84,
+            "apparentTemperatureMaxTime": 1550847600,
+            "apparentTemperatureMin": 4.58,
+            "apparentTemperatureMinTime": 1550808000,
+            "cloudCover": 0.22,
+            "dewPoint": 6.98,
+            "humidity": 0.88,
+            "icon": "partly-cloudy-day",
+            "moonPhase": 0.61,
+            "ozone": 282.43,
+            "precipIntensity": 0,
+            "precipIntensityMax": 0,
+            "precipProbability": 0,
+            "pressure": 1034.53,
+            "summary": "Partly cloudy starting in the afternoon, continuing until evening.",
+            "sunriseTime": 1550818102,
+            "sunsetTime": 1550855748,
+            "temperatureHigh": 13.84,
+            "temperatureHighTime": 1550847600,
+            "temperatureLow": 4.93,
+            "temperatureLowTime": 1550901600,
+            "temperatureMax": 13.84,
+            "temperatureMaxTime": 1550847600,
+            "temperatureMin": 5.1,
+            "temperatureMinTime": 1550815200,
+            "time": 1550790000,
+            "uvIndex": 2,
+            "uvIndexTime": 1550833200,
+            "visibility": 16.09,
+            "windBearing": 122,
+            "windGust": 32.19,
+            "windGustTime": 1550872800,
+            "windSpeed": 3.3,
+          },
+        ],
+        "icon": "clear-day",
+        "summary": "No precipitation throughout the week, with high temperatures rising to 17°C on Wednesday.",
+      }
+    }
+  />
+  <DarkSkyFlags
+    data={true}
+  />
+</div>
+`;

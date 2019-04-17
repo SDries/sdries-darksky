@@ -1,0 +1,34 @@
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/mixins.scss';
+
+.Error {
+  border: 1px solid $red;
+  @include border-radius(4px);
+  color: $red;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+
+  p {
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background: $red;
+    border: 1px solid $red;
+    color: $white;
+    font-size: .9rem;
+    @include border-radius(4px);
+    padding: 4px 10px;
+    cursor: pointer;
+    margin:0 auto;
+    display:block;
+
+    &:hover {
+      background: $white;
+      color: $red;
+    }
+  }
+}

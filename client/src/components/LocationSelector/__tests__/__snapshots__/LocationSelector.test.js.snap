@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`react-locationselector renders with fallbackLocation 1`] = `
+<div
+  className="LocationSelector"
+>
+  <p>
+    Your 
+    longitude
+     is 
+    <span>
+      1
+    </span>
+    .
+  </p>
+  <p>
+    Your 
+    latitude
+     is 
+    <span>
+      1
+    </span>
+    .
+  </p>
+</div>
+`;
