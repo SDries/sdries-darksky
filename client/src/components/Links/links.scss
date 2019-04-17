@@ -1,0 +1,26 @@
+@import '../../assets/styles/mixins.scss';
+@import '../../assets/styles/shared.scss';
+
+.Links {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  a {
+    font-family: $title-font;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    color: $white;
+    background: $light-grey;
+    width: 30%;
+    border: 1px solid $white;
+
+    &:hover {
+      background: lighten($light-grey, 10);
+    }
+  }
+}

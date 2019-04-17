@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 import LocationSelector from '../LocationSelector/LocationSelector';
 import DarkSkyApiFetcher from '../DarkSkyApiFetcher/DarkSkyApiFetcher';
+import Links from '../Links/Links';
 
 import './app.scss';
 
@@ -52,6 +53,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Links />
       <LocationSelector
       location={this.state.location}
       fallbackLocation={this.fallbackLocation.location}
